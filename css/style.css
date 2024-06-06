@@ -1,0 +1,155 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  background-color: #DBD8F0;
+  color:rgba(0, 0, 0, 0.651);
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 32px;
+  font-style: italic;
+  animation: colorchange 5s infinite alternate; 
+}
+
+#output {
+  width: 80vh;
+  height: 300px;
+  border: 2px solid #0d0c0e13;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.input{
+  width: 80vh;
+  height: 20hv;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+input {
+  width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: 2px solid #2b2a2a50;
+}
+
+textarea {
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 8px;
+  resize: none;
+  overflow: auto;
+  border: 2px #1f59d6b7;
+}
+
+textarea:focus {
+  outline: 2px solid #2b2a2a50;
+}
+
+button {
+  width: 130px;
+  height: 45px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  border-color: rgb(122, 122, 122);
+  border-radius: 8px;
+  color:rgba(0, 0, 0, 0.651);
+}
+
+button:hover{
+  font-weight: 600;
+  transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms; 
+  cursor: pointer;
+}
+
+.btn2{
+  background-color: #f8994b;
+  margin: 5px;
+}
+.btn3{
+  background-color: #41a2e7;
+  margin: 5px;
+}
+
+
+
+.input-btn{
+  display: flex;
+}
+
+.msg-uname{
+  font-size: small;
+  font-weight: bold;
+}
+
+.msg-box:nth-child(odd){
+  margin-right: auto;
+  margin-left: 10px;
+  padding: 8px 10px;
+  border: 1px solid rgb(179, 177, 177);
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: rgb(218, 214, 214);  
+}
+
+.msg-box:nth-child(even){
+  margin-left: auto;
+  margin-right: 10px;
+  padding: 8px 10px;
+  border: 1px solid gray;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #a297e7;  
+}
+
+#udt-rmv{
+  display: flex;
+  justify-content: end;
+  font-size: x-small;
+}
+
+.remove,.update {
+  margin: 2px 4px;
+}
+
+@keyframes colorchange {
+  0% {
+    color: indigo;
+  }
+  
+  25% {
+    color: blue;
+  }
+  
+   
+  50% {
+    color: yellow;
+  }
+  
+  75% {
+    color: orange;
+  }
+  
+  100% {
+    color: rgb(255, 72, 0);
+  }
+  
+}
+
